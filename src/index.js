@@ -1,3 +1,3 @@
-import 'bootstrap'
-import './sass/main.scss'
-
+import './sass/main.scss';
+import './js/counterup';
+import './js/index';

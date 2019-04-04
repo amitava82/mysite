@@ -1,0 +1,271 @@
+.header-area {
+  background-image: linear-gradient(135deg, #593196 0%, #764ba2 100%);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 998;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.header-area.sticky-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.logo {
+  display: inline-block;
+  border: 2px solid #fff;
+  padding: 5px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+
+}
+
+.main-menu {
+  text-align: right;
+
+  .navigation {
+    margin-bottom: 0;
+  }
+}
+
+.main-menu nav ul li {
+  display: inline-block;
+}
+
+.main-menu nav ul li a {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+  padding: 20px 24px;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+.main-menu nav ul li a:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 25%;
+  height: 5px;
+  width: 5px;
+  background: #fff;
+  border-radius: 10px;
+  margin: auto;
+  opacity: 0;
+  right: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.main-menu nav ul li a:hover:before,
+.main-menu nav ul li.active a:before {
+  opacity: 1;
+}
+
+
+.hero-area {
+  height: 100vh;
+  min-height: 750px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: $primary;
+}
+
+.hero-area:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-color: $primary;
+  background-image: linear-gradient(135deg, #593196 0%, #764ba2 100%);
+  opacity: 0.9;
+}
+
+.hero-area:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -443px;
+  z-index: -1;
+  height: 500px;
+  width: 2000px;
+  background-color: #fff;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-content {
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.my-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 40px;
+  position: relative;
+  border: 2px solid #fff;
+}
+
+.hero-content h2 {
+  font-size: 50px;
+  letter-spacing: 0;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.social-link {
+  margin: auto;
+  margin-top: 32px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 125px;
+}
+.social-link::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  width: 100px;
+  height: 2px;
+  background: #fff;
+  content: "";
+  margin: auto;
+}
+.social-link::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  width: 100px;
+  height: 2px;
+  background: #fff;
+  content: "";
+  margin: auto;
+}
+
+.social-link li {
+  display: inline-block;
+}
+.social-link li a {
+  display: block;
+  font-size: 15px;
+  color: #fff;
+  margin: 0px 3px;
+}
+
+.social-link:hover li a {
+  color: #ffffff;
+}
+
+.social-link li a:hover, .social-link li a:hover svg {
+  color: #30095f;
+  fill: #30095f;
+}
+
+.hero-area a.scrolldown {
+  color: #fff;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.hero-area a.scrolldown span {
+  display: block;
+}
+
+.hero-area a.scrolldown i {
+  font-size: 17px;
+  color: #fff;
+  -webkit-animation: scrldown 2s linear 0s infinite;
+  -o-animation: scrldown 2s linear 0s infinite;
+  animation: scrldown 2s linear 0s infinite;
+}
+
+@keyframes scrldown {
+  0% {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+
+/*============================================
+    END Hero Area
+*=============================================*/
+
+.social-link {
+  margin-top: 32px;
+}
+
+.social-link h5 {
+  font-size: 19px;
+  font-weight: 600;
+  color: #444;
+  letter-spacing: 0;
+  margin-right: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.social-link h5:before {
+  content: '';
+  position: absolute;
+  left: -20%;
+  bottom: -1px;
+  height: 13px;
+  width: 120%;
+  background: #000;
+  opacity: 0.1;
+}
+
+.social-link a {
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 11px;
+}
+
+.social-link:hover a {
+  color: #000;
+}
+
+.social-link a:hover {
+  color: #444;
+}

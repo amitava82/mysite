@@ -20,7 +20,7 @@ module.exports =  (env, options) => ({
                 use: [options.mode !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
             },
             {
-                test: /\.(png|jpg|gif)$/,
+                test: /\.(png|jpg|gif|svg)$/,
                 use: [{
                     loader: 'file-loader',
                     options: {
@@ -61,14 +61,6 @@ module.exports =  (env, options) => ({
                 inject: "body",
                 filename: fileName.replace('src/', '')
             })
-        }),
-        new webpack.ProvidePlugin({
-            $: 'jquery',
-            jQuery: 'jquery',
-            'window.jQuery': 'jquery',
-            Popper: ['popper.js', 'default'],
-            Util: "exports-loader?Util!bootstrap/js/dist/util",
-            Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown",
         })
     ],
     output: {

@@ -1,0 +1,29 @@
+.testimonials {
+  padding: 95px 0;
+  border-bottom: 1px solid #eee;
+  &__header {
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 50px;
+    font-style: italic;
+  }
+
+  .testimonial {
+    text-align: center;
+    > h1 {
+      font-weight: 700;
+      color: black;
+      margin-bottom: 15px;
+    }
+    > div {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

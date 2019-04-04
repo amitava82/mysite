@@ -1,0 +1,42 @@
+.about-area {
+  padding: 95px 0;
+
+  .abt-content {
+    font-size: 1.1rem;
+    @media (max-width: 991px) {
+      margin-bottom: 40px;
+    }
+    .lead {
+      font-size: 1.4rem;
+      color: #2c3e50;
+      font-weight: 400;
+    }
+    h2 {
+      font-size: 30px;
+      letter-spacing: 0;
+      margin-bottom: 28px;
+      span {
+        font-weight: 800;
+      }
+    }
+  }
+  .skills {
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      font-weight: 100;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+    .prog {
+      margin-bottom: 10px;
+      .prog-title {
+        margin-bottom: 5px;
+        font-weight: 600;
+      }
+      .progress {
+        height: 4px;
+      }
+    }
+  }
+}

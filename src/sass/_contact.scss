@@ -1,0 +1,88 @@
+.contact-area {
+  position: relative;
+  padding: 95px 0;
+  .section-title {
+    margin-bottom: 60px;
+  }
+  .form-group {
+    margin-bottom: 2rem;
+  }
+  .irs--round .irs-bar {
+    background-color: $primary;
+  }
+  .irs--round .irs-handle {
+    border-color: $primary;
+  }
+  .irs--round .irs-single {
+    background-color: $primary;
+  }
+  .irs--round .irs-from:before, .irs--round .irs-to:before, .irs--round .irs-single:before {
+    border-top-color: $primary;
+  }
+}
+
+//.contact-form form input,
+//.contact-form form textarea {
+//  height: 34px;
+//  width: 100%;
+//  background: #fff;
+//  border: 1px solid #dddddd;
+//  margin-bottom: 20px;
+//  letter-spacing: 0;
+//  font-size: 14px;
+//}
+//
+//.contact-form form input::-webkit-input-placeholder,
+//.contact-form form textarea::-webkit-input-placeholder {
+//  color: #000;
+//}
+//
+//.contact-form form input::-moz-placeholder,
+//.contact-form form textarea::-moz-placeholder {
+//  color: #000;
+//}
+//
+//.contact-form form input:-ms-input-placeholder,
+//.contact-form form textarea:-ms-input-placeholder {
+//  color: #000;
+//}
+//
+//.contact-form form input:-moz-placeholder,
+//.contact-form form textarea:-moz-placeholder {
+//  color: #000;
+//}
+//
+//.contact-form form textarea {
+//  height: 87px;
+//}
+//
+//.contact-form form .form-submit {
+//  text-align: center;
+//}
+//
+//.contact-form form button {
+//  background: #f6f2ef;
+//  color: #000;
+//  border: none;
+//  text-transform: uppercase;
+//  font-size: 12px;
+//  padding: 9px 25px;
+//  font-weight: 400;
+//  cursor: pointer;
+//  outline: none;
+//}
+//
+//.contact-form form button i {
+//  display: inline-block;
+//  margin-left: 8px;
+//  -webkit-transition: all 0.3s ease 0s;
+//  -o-transition: all 0.3s ease 0s;
+//  transition: all 0.3s ease 0s;
+//}
+//
+//.contact-form form button:hover i {
+//  -webkit-transform: translateX(5px);
+//  -ms-transform: translateX(5px);
+//  -o-transform: translateX(5px);
+//  transform: translateX(5px);
+//}
