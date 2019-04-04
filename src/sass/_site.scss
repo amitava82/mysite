@@ -10,6 +10,10 @@
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+
+  .logo {
+    margin: 10px 0;
+  }
 }
 
 .header-area.sticky-menu {
@@ -114,6 +118,10 @@
   color: white;
   font-size: 18px;
   font-weight: 300;
+}
+
+.bg-light {
+  background-color: #f8f9fa!important;
 }
 
 .my-img {
