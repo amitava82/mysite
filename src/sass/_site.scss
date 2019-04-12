@@ -133,6 +133,12 @@
   margin-bottom: 40px;
   position: relative;
   border: 2px solid #fff;
+
+  img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .hero-content h2 {
@@ -276,4 +282,8 @@
 
 .social-link a:hover {
   color: #444;
+}
+
+.alert-error {
+  color: red;
 }

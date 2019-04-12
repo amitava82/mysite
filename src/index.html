@@ -54,7 +54,7 @@
     <section class="hero-area" id="home">
         <div class="container">
             <div class="hero-content">
-                <div class="my-img"><img src="img/profile.jpg" alt="image"></div>
+                <div class="my-img"><img src="img/potrait.jpeg" alt="image"></div>
                 <h2>Hello, I'm <span>Amitava Saha</span></h2>
                 <div>I'm a Senior Full-Stack Javascript Developer from Bangalore.</div>
                 <div>I have over 8 years experience building web applications.</div>
@@ -310,7 +310,7 @@
                     <div class="contact-form">
                         <div class="screen-reader-response"></div>
                         <form id="contact-form" class="ajaxForm"
-                              action="https://getform.io/f/72329e8c-0ff4-4027-8b0b-4440adb1c5c7" method="post">
+                              action="/api/contact" method="post">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -349,6 +349,14 @@
                                     <div class="form-group">
                                         <textarea class="form-control form-control-lg" rows="5" name="msg" id="msg"
                                                   placeholder="Please tell me bit more about your project"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="g-recaptcha" data-sitekey="6Lfzwp0UAAAAAA6iy1Ep7kCmgjdshCRFQXtkMRSm"></div>
+                                        <div class="captcha-error alert alert-error"></div>
                                     </div>
                                 </div>
                             </div>
@@ -398,6 +406,7 @@
         </div>
     </div>
 </header>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>

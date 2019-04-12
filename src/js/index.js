@@ -37,21 +37,49 @@ $(function () {
 
   $('#contact-form').on('submit', function(e) {
     e.preventDefault();
+    const captchaResp = grecaptcha.getResponse();
+    console.log(captchaResp);
+
+    if(captchaResp.length === 0) {
+      $('.captcha-error').text('Please verify that you are a human!');
+      return;
+    } else {
+      $('.captcha-error').text('');
+    }
+
+    var data = $(this).serializeArray();
+
+
+
     $(e.target).attr('disabled', true);
     var action = $(this).attr("action");
     $.ajax({
       type: "POST",
       url: action,
-      crossDomain: true,
-      data: new FormData(this),
-      contentType: false,
-      processData: false,
+      contentType: 'application/json',
+      data: JSON.stringify(getFormData(data))
     }).then(function () {
       $('.form-submit').html(
         `<div class="alert alert-success">Thank you! Your message has been received.</div>`
       );
-    });
+    }).catch(
+      (e) => {
+        console.log(e);
+        $('.captcha-error').text(e.message);
+      }
+    )
   });
+
+  function getFormData(data) {
+    var unindexed_array = data;
+    var indexed_array = {};
+
+    $.map(unindexed_array, function(n, i) {
+      indexed_array[n['name']] = n['value'];
+    });
+
+    return indexed_array;
+  }
 
   //function for active menuitem
   function activeMenuItem($links) {

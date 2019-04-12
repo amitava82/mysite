@@ -20,7 +20,7 @@ module.exports =  (env, options) => ({
                 use: [options.mode !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
             },
             {
-                test: /\.(png|jpg|gif|svg)$/,
+                test: /\.(png|jpg|jpeg|gif|svg|ico)$/,
                 use: [{
                     loader: 'file-loader',
                     options: {
@@ -59,7 +59,8 @@ module.exports =  (env, options) => ({
             return new HtmlWebpackPlugin({
                 template: fileName,
                 inject: "body",
-                filename: fileName.replace('src/', '')
+                filename: fileName.replace('src/', ''),
+                favicon: 'src/favicon.ico'
             })
         })
     ],
